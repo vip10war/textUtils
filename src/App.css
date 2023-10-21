@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.testingClass {
+  color: rgba(0, 255, 72, 0.371)
+}
+
+
