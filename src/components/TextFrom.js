@@ -25,6 +25,10 @@ export default function TextFrom(props) {
         setText(clearText);
     }
 
+    const handleCopyText = () => {
+        navigator.clipboard.writeText(text);
+    }
+
     const handleOnChange = (event) => {
         // console.log('Handle on change')
         setText(event.target.value)
@@ -40,6 +44,7 @@ export default function TextFrom(props) {
         <button className="btn btn-primary mx-2" onClick={handleUpperClick} >Convert to UPPERCASE</button>
         <button className="btn btn-primary mx-2" onClick={handleLowerClick} >Convert to lowercase</button>
         <button className="btn btn-primary mx-2" onClick={handleclearClick} >Clear text</button>
+        <button className="btn btn-primary mx-2" onClick={handleCopyText} >Copy text</button>
 
   </div>
   <div className="container2 my-3" >
