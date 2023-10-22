@@ -6,7 +6,7 @@ import TextFrom from './components/TextFrom'
 function App() {
   return (
     <>
-    <Navbar title="KronMan" aboutText="About Me" homeText="Home"/>
+    <Navbar title="TextUtils" aboutText="About" homeText="Home"/>
     <div className="container my-3">
     <TextFrom heading="Enter the text below to analyze "/>
     </div>
